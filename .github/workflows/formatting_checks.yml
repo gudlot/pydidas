@@ -11,9 +11,9 @@ name: formatting checks
 
 on:
   push:
-    branches: [ "github-workflows" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "github-workflows" ]
+    branches: [ "master" ]
 
 jobs:
   code_checks:
@@ -28,10 +28,6 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: "3.11"
-    - uses: actions/cache@v2
-      with:
-        path: ${{ env.pythonLocation }}
-        key: ${{ env.pythonLocation}}-formatting-${{ hashFiles('pyproject.toml')}}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip

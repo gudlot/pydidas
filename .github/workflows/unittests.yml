@@ -9,9 +9,9 @@ name: running unittest
 
 on:
   push:
-    branches: [ "github-workflows" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "github-workflows" ]
+    branches: [ "master" ]
 
 jobs:
   unittest:
