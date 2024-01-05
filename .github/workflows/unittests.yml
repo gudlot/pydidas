@@ -37,4 +37,3 @@ jobs:
       run: |
         export QT_QPA_PLATFORM=offscreen
         python -m unittest
-        # python tests/multiprocessing/test_app_runner.py
