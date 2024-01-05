@@ -43,7 +43,7 @@ class TestAppRunner(unittest.TestCase):
             cls.qt_app = QtWidgets.QApplication([])
         cls.q_settings = PydidasQsettings()
         cls._mosaic_border_width = cls.q_settings.value("user/mosaic_border_width")
-        cls._mosaic_border_value= cls.q_settings.value("user/mosaic_border_value")
+        cls._mosaic_border_value = cls.q_settings.value("user/mosaic_border_value")
         cls.q_settings.set_value("user/mosaic_border_width", 0)
         cls.q_settings.set_value("user/mosaic_border_value", 1)
 
